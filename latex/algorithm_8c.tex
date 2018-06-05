@@ -1,0 +1,64 @@
+\hypertarget{algorithm_8c}{}\section{C\+:/\+Users/theod/\+Desktop/ad project/my code/\+Order-\/infoarena-\/-\/\+A\+I\+B/algorithm.c File Reference}
+\label{algorithm_8c}\index{C\+:/\+Users/theod/\+Desktop/ad project/my code/\+Order-\/infoarena-\/-\/\+A\+I\+B/algorithm.\+c@{C\+:/\+Users/theod/\+Desktop/ad project/my code/\+Order-\/infoarena-\/-\/\+A\+I\+B/algorithm.\+c}}
+
+
+C library implementation that solves the problem on the support of the data generated in binary indexed tree.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}aib\+\_\+array.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}B\+I\+T\+\_\+build.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}algorithm.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}update.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{algorithm_8c_ac65ff756c43dfefb43b104ffa25ea8c4}{function} (int remaining\+\_\+children, int n, int child)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C library implementation that solves the problem on the support of the data generated in binary indexed tree. 
+
+\begin{DoxyAuthor}{Author}
+Theodora Danciulescu 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+06/05/18. 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{algorithm_8c_ac65ff756c43dfefb43b104ffa25ea8c4}\label{algorithm_8c_ac65ff756c43dfefb43b104ffa25ea8c4}} 
+\index{algorithm.\+c@{algorithm.\+c}!function@{function}}
+\index{function@{function}!algorithm.\+c@{algorithm.\+c}}
+\subsubsection{\texorpdfstring{function()}{function()}}
+{\footnotesize\ttfamily void function (\begin{DoxyParamCaption}\item[{int}]{remaining\+\_\+children,  }\item[{int}]{n,  }\item[{int}]{child }\end{DoxyParamCaption})}
+
+This function will print the initial position of the child that is eliminated at the current step \begin{DoxyAuthor}{Author}
+Theodora Danciulescu 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em remaining\+\_\+children} & will represent the number of children that remained in the game \\
+\hline
+{\em n} & will represent the initial number of children and also theh number of steps for the game \\
+\hline
+{\em child} & represents the child who strts the counting \\
+\hline
+\end{DoxyParams}
+since the array is circular we use the following formula to find out the right position of the child to be eliminated
+
+decrement the number of the remaining children
+
+setting the bounds for the binary search
+
+binary search adapted for binary indexed trees
+
+left\+\_\+pos is the initial position of the child to be eliminated
+
+update with -\/1 at that position in the binry indexed tree 
+
+Definition at line 24 of file algorithm.\+c.
+
